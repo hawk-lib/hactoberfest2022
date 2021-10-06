@@ -23,40 +23,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import com.egroup.onetap.browser.WebSurf;
-import com.egroup.onetap.call.ContactsAndPhoneDialer;
-import com.egroup.onetap.launcher.dataBase.ApplicationDataBase;
-import com.egroup.onetap.launcher.fragments.First;
-import com.egroup.onetap.launcher.fragments.Fourth;
-import com.egroup.onetap.launcher.fragments.Second;
-import com.egroup.onetap.launcher.fragments.Third;
-import com.egroup.onetap.launcher.setup.Setup;
-import com.egroup.onetap.launcher.viewpagerTransition.AntiClockSpinTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.ClockSpinTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeInDepthTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeInRotationTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeInScalingTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeOutDepthTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeOutRotationTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.CubeOutScalingTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.DepthTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.FadeOutTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.FanTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.FidgetSpinTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.GateTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.HingeTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.HorizontalFlipTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.PopTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.SpinnerTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.TossTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.VerticalFlipTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.VerticalShutTransformation;
-import com.egroup.onetap.launcher.viewpagerTransition.ZoomOutTransformation;
-import com.google.android.material.tabs.TabLayout;
-
 import java.util.ArrayList;
 import java.util.List;
 
