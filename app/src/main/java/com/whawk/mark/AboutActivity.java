@@ -1,10 +1,7 @@
 package com.whawk.mark;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 public class AboutActivity extends AppCompatActivity {
 

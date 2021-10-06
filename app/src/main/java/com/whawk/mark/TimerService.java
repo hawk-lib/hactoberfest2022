@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 
-import androidx.annotation.Nullable;
-import static com.whawk.mark.MainActivity.flag;
 
 public class TimerService extends Service {
     public TimerService() {
