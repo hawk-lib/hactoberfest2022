@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206572238275",
+    "project_id": "schedula-893b8",
+    "storage_bucket": "schedula-893b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206572238275:android:c98a0f0cbc5952e93d3976",
+        "android_client_info": {
+          "package_name": "com.Schedula.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206572238275-6qqmdt2dr5cc5ca9fbhlp6ihs4jffrlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDww7yQvI54F72qxgkSoChA-jPgW-QHdJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206572238275-6qqmdt2dr5cc5ca9fbhlp6ihs4jffrlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
