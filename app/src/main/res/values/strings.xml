@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Mark</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="about_description">A Firebase based application available for android users to keep their login credentials secure. Mark keeps a copy of user data in a device memory for viewing data in offline mode.</string>
-
-</resources>
