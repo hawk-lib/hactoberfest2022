@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;   
   
 //create KrishnamurthyNumber class to check whether the given number is a Krishnamurthy number or not  
-class KrishnamurthyNumber {   
+class Krishnamurthy {   
       
     // create fact() method to calculate the factorial of the number   
     static int fact(int number)   
