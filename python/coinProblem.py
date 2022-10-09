@@ -25,10 +25,14 @@ def count(S, m, n):
 
 	return table[n][m-1]
 
-# Driver program to test above function
-arr = [1, 2, 3]
-m = len(arr)
-n = 4
-print(count(arr, m, n))
 
-# This code is contributed by Bhavya Jain
+# Driver program to test above function
+
+if __name__ == '__main__':
+	arr = [1, 2, 3]
+	m = len(arr)
+	n = 4
+	print(count(arr, m, n))
+
+	# This code is contributed by Bhavya Jain
+	# added driver code functionality by Saurabh Barasiya
