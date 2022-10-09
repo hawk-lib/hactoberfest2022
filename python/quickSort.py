@@ -43,7 +43,7 @@ def quickSort(array, low, high):
 
 
 if __name__ == '__main__':
-    # Driver Code
+    # Driver Code 👀👀👀👀👀
     data = [8, 7, 2, 1, 0, 9, 6]
     print("Unsorted Array")
     print(data)
