@@ -42,13 +42,15 @@ def quickSort(array, low, high):
     quickSort(array, pi + 1, high)
 
 
-data = [8, 7, 2, 1, 0, 9, 6]
-print("Unsorted Array")
-print(data)
+if __name__ == '__main__':
+    # Driver Code
+    data = [8, 7, 2, 1, 0, 9, 6]
+    print("Unsorted Array")
+    print(data)
 
-size = len(data)
+    size = len(data)
 
-quickSort(data, 0, size - 1)
+    quickSort(data, 0, size - 1)
 
-print('Sorted Array in Ascending Order:')
-print(data)
+    print('Sorted Array in Ascending Order:')
+    print(data)
