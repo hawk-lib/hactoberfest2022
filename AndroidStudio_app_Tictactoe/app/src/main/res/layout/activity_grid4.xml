@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bagg"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
+        android:layout_width="332dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="84dp"
+        android:gravity="center"
+        android:text="TIC TAC TOE"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="174dp"
+        android:layout_height="85dp"
+        android:background="@drawable/bg"
+        android:onClick="retry"
+        android:text="Retry"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/neumorphImageView3"
+        android:layout_width="178dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphImageView"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphImageView2"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tap to play the Game"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphImageView"
+        android:layout_width="418dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="298dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+
+            app:srcCompat="@drawable/abcd" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            app:columnCount="4"
+            app:rowCount="4">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="3"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="4"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="5"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="6"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="7"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="8"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="9"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="10"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="11"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="12"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="13"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="14"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="15"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

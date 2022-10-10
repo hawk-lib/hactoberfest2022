@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bagg"
+    tools:context=".MainActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
+        android:layout_width="332dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="84dp"
+        android:gravity="center"
+        android:text="@string/tic_tac_toe"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/neumorphImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphImageView3"
+        android:layout_width="178dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/neumorphImageView"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphImageView"
+        app:layout_constraintVertical_bias="0.95">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:onClick="retry"
+            android:text="@string/retry"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphImageView2"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tap to play the Game"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphImageView"
+        android:layout_width="418dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="298dp"
+        app:layout_constraintBottom_toTopOf="@id/neumorphImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+
+            app:srcCompat="@drawable/g56b" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            app:columnCount="5"
+            app:rowCount="5">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="2"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="3"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="4"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="5"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="6"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="7"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:onClick="click"
+                android:padding="5dp"
+                android:tag="8"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="9"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="10"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="11"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="12"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="13"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="14"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="15"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="16"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="17"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="18"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="19"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="20"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="21"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="22"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="23"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="23dp"
+                android:layout_height="12dp"
+                android:layout_margin="5sp"
+                android:adjustViewBounds="true"
+                android:onClick="click"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tag="24"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

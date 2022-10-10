@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/drawable/bg.xml" value="0.1" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/drawable/dialog_bg.xml" value="0.166" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/activity_grid4.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/activity_grid5.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/activity_main.xml" value="0.1294871794871795" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/activity_mainmain.xml" value="0.215625" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/activity_splash_screen.xml" value="0.23671875" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/dialog_box.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/grid_4.xml" value="0.23671875" />
+        <entry key="..\:/Users/sriva/AndroidStudioProjects/Game/app/src/main/res/layout/main.xml" value="0.23515625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
