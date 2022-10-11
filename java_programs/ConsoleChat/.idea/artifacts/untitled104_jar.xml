@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="untitled104:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled104_jar</output-path>
+    <root id="archive" name="chatconsole.jar">
+      <element id="module-output" name="untitled104" />
+    </root>
+  </artifact>
+</component>
