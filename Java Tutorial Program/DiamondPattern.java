@@ -4,10 +4,10 @@ class DiamondPattern{
     int i,j,k;
     Scanner sc= new Scanner(System.in);
     System.out.print("Enter the number of row for diamond shape : ");  
-    int num = sc.nextInt();  
-    for(i=0;i<num;i++)
+    int no = sc.nextInt();  
+    for(i=0;i<no;i++)
     {
-	    for(j=0;j<num-i-1;j++){
+	    for(j=0;j<no-i-1;j++){
                      System.out.print(" ");
 	    }
 	    for(k=0;k<2*i+1;k++){
@@ -16,9 +16,9 @@ class DiamondPattern{
 		 System.out.println("");
 	    }
 	    
-	 for(i=num-1;i>0;i--)
+	 for(i=no-1;i>0;i--)
     {
-	    for(j=num-1;j>=i;j--){
+	    for(j=no-1;j>=i;j--){
                      System.out.print(" ");
 	    }
 	   for(k=2*i-1;k>0;k--){
