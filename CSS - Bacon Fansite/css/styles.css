@@ -1,0 +1,128 @@
+body{
+  color:#40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1
+{
+  margin: 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #66BFBF;
+
+}
+h2
+{
+  font-family: 'ontserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+.middle-container {
+  margin: 100px 0;
+}
+.intro {
+width: 30%;
+margin: auto;
+}
+h3
+{
+  font-family: 'Montserrat', sans-serif;
+  color:#11999E;
+}
+p {
+  line-height: 2;
+}
+hr {
+  border : dotted #EAF6F6 6px;
+  border-bottom: none;
+  width : 4%;
+  margin : 100px auto;
+}
+
+.top-container
+{
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 200px;
+}
+
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+.footer-link{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+.footer-link:hover{
+  color: #EAF6F6;
+}
+  .btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #1199a);
+  background-image: -moz-linear-gradient(top, #11cdd4, #1199a);
+  background-image: -ms-linear-gradient(top, #11cdd4, #1199a);
+  background-image: -o-linear-gradient(top, #11cdd4, #1199a);
+  background-image: linear-gradient(to bottom, #11cdd4, #1199a);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+
+.web
+{
+  text-decoration: underline;
+}
+
+.skill-row {
+  width : 50%;
+  margin : 100px auto 100px auto;
+  text-align: left;
+
+}
+.bottom-cloud
+{
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.top-cloud
+{
+  position: absolute;
+  right:300px;
+  top:40px;
+}
+.i1{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+
+}
+.i2{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
