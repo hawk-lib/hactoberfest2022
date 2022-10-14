@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class array2d_diag
+{
+    public static void main (String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("matrix row dimensions :");
+        int n =sc.nextInt();
+        System.out.println("matrix column dimensions :");
+        int m =sc.nextInt();
+        int ar[][]= new int[n][m];
+        int diag1=0;int diag2=0;
+        for(int i=0 ;i<n ; i++)
+        {
+            System.out.println("enter elements for row"+(i+1)+':');
+            for(int j=0 ;j<m ; j++)
+            {
+                ar[i][j]=sc.nextInt();
+            }
+        }
+             //printing the array 
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                System.out.print(ar[i][j]+"\t");
+            }
+            System.out.println();
+        }
+            //starts diagonal part
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                if(i==j)       
+                {                
+                    diag1+=ar[i][j];  
+                }
+                if(i+j==n-1)            
+                {
+                    diag2+=ar[i][j];
+                }
+            }
+        }
+        System.out.println("diagonal1 : "+diag1);
+        System.out.print("diagonal2 : "+diag2);
+
+    }
+}
