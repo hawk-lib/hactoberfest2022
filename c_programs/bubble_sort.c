@@ -2,7 +2,7 @@
 
 int main(){
 
-    int arr[50], num, x, y, temp;    
+    int arr[50], num, x, y, tempo;    
 
     printf("Please Enter the Number of Elements you want in the array: ");
 
@@ -20,11 +20,11 @@ int main(){
 
             if(arr[y] > arr[y + 1]){               
 
-                temp = arr[y];
+                tempo = arr[y];
 
                 arr[y] = arr[y + 1];
 
-                arr[y + 1] = temp;
+                arr[y + 1] = tempo;
 
             }
 
