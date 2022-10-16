@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643619300 source:c:\users\jayad\onedrive\documents\c\lab3\odd or even\callender\main.c
+	<stdio.h>
+	<stdlib.h>
+
