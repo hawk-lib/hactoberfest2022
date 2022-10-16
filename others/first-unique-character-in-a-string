@@ -1,0 +1,20 @@
+var firstUniqChar = function(s) {
+    
+    let hashmap = new Map;
+
+    for(let i = 0;i<s.length;i++){
+        if(hashmap.has(s[i])){
+            hashmap.set(s[i],hashmap.get(s[i]++));
+        }
+        else{
+            hashmap.set(s[i],1);
+        }
+    }
+  
+  for(let i = 0;i<s.length;i++){
+      if(hashmap.get(s[i])===1){
+          return i;
+      }
+  }
+  return -1;
+};
