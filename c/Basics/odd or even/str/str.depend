@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1643607671 source:c:\users\jayad\onedrive\documents\c\lab3\odd or even\str\main.c
+	<stdio.h>
+	<stdlib.h>
+
