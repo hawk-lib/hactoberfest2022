@@ -1,19 +1,19 @@
 public class binarysearch {
     int Binary(int arr[],int search)
 	{
-		int start=0,mid=0;
-		int end=(arr.length)-1;
-		while(start<=end)
+		int low=0,mid=0;
+		int high=(arr.length)-1;
+		while(low<=high)
 		{
-			mid=start+(end-start)/2;
+			mid=low+(high-low)/2;
 		
 		if(search<arr[mid])
 		{
-			end=mid-1;
+			high=mid-1;
 		}
 		else if(search>arr[mid])
 		{
-			start=mid+1;
+			low=mid+1;
 		}
 		else
 		{
