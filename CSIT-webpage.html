@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSIT Department</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @-ms-viewport {
+            width: extend-to-zoom;
+            zoom: 1.0;
+        }
+
+        @viewport {
+            zoom: 1.0;
+            width: extend-to-zoom;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-shadow: rgb(199, 193, 190) 3px -2px;
+            padding: 15px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: larger;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #header {
+            background-color: #111311d2;
+            width: 100%;
+            font-size: 40px;
+            color: white;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .headpart img {
+            border-radius: 50px;
+            border: 2px solid black;
+        }
+
+        .nav {
+            background-color: black;
+            height: 52px;
+            top: 0px;
+        }
+
+        .nav a {
+            padding: 14px 16px;
+            display: inline;
+            float: left;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: arial;
+            cursor: pointer;
+        }
+
+        .nav a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #504f4e;
+            color: rgb(252, 248, 248);
+        }
+
+        .dropdown {
+            float: left;
+        }
+
+        .dropdown .dropbtn {
+            padding: 14px 16px;
+            color: white;
+            background-color: black;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .dropcontent {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 180px;
+        }
+
+        .dropcontent a {
+            float: none;
+            display: block;
+            color: black;
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropcontent {
+            display: block;
+        }
+
+        .dropcontent a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .csit {
+            background-color: #ffbf80;
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+            text-shadow: white 3px -3px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main img {
+            width: 210px;
+            height: 180px;
+        }
+
+        #img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .tab {
+            border-collapse: collapse;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .tablehead {
+            background-color: rgb(92, 91, 91);
+            color: white;
+            padding: 0.7em;
+        }
+
+
+        .row:hover {
+            background-color: rgb(204, 201, 201);
+        }
+
+        #mail {
+            float: right;
+            font-size: 18px;
+        }
+
+        .mission-col {
+            padding: 40px 0px 40px 0px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 70px;
+            background-color: rgba(131, 127, 120, 0.568);
+        }
+
+        .outer {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .inner {
+            background-color: rgb(57, 54, 59);
+            margin: 50px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.8) url("https://www.bellevuecollege.edu/wp-content/uploads/sites/144/2020/03/graduation-cap-throw-1024x458.png");
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .subscribe {
+            text-align: center;
+            color: #ddd;
+            height: 600px;
+        }
+
+        .subsbutton {
+            background-color: rgb(0, 102, 255);
+            color: white;
+            height: 40px;
+            padding: 10px;
+        }
+
+        .colorchange:hover {
+            cursor: pointer;
+            background-color: #0cda5b93;
+
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 5px;
+            border-radius: 60%;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+
+        #footer {
+            background-color: #111311d2;
+            color: white;
+            width: 100%;
+            height: 100px;
+            font-size: large;
+            text-align: center;
+        }
+
+        .f:hover {
+            color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="headpart"><img src="https://www.careerindia.com/img/2012/10/11-acropolis.jpg" width=100px
+                height=70px /></div>
+        <div>Acropolis Institute Of Technology And Research</div>
+        <div><span>&#9742</span>0731-4730000</div>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#course">Courses</a>
+        <div class="dropdown">
+            <button class="dropbtn">Cell</button>
+            <div class="dropcontent">
+                <a href="#">Cyber Security Cell</a>
+                <a href="#">Women Cell</a>
+                <a href="#">Alumni Cell</a>
+                <a href="#">Intellectual Property Cell</a>
+                <a href="#">Technical Skills Development</a>
+                <a href="#">NPTEL</a>
+                <a href="#">Training & Development</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Activity</button>
+            <div class="dropcontent">
+                <a href="#">Department</a>
+                <a href="#">Year</a>
+                <a href="#">Type</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">I&E</button>
+            <div class="dropcontent">
+                <a href="#">Innovation Policies</a>
+                <a href="#">Entrepreneurship Cell</a>
+                <a href="#">Institute Innovation Council</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropcontent">
+                <a href="#">CSI</a>
+                <a href="#">Academics</a>
+                <a href="#">Cultural</a>
+                <a href="#">Infrastructure</a>
+                <a href="#">Placement</a>
+            </div>
+        </div>
+        <div><a href="#" id="mail"><span>&#9993;</span>info@acropolis.in</a></div>
+    </div>
+    <div class="csit"><b>DEPARTMENT OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY </b></div>
+    <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/16250272251588664341AIPERBuilding.jpg?tr=c-force "
+        id="img" onmouseover=img1() onmouseout=img2() />
+    </div>
+    <h1>Department of Computer Science and Information Technology </h1>
+    <p>AITR has always been at the forefront of adopting new technologies. CSIT department @ AITR has three courses
+        those include the emerging areas as recommended by the AICTE committee. As exponential growth in information on
+        various platforms, future engineers must have the expertise in core computer science as well as latest
+        technologies. It requires blending of emerging areas with core subject and therefore AICTE introduced as new
+        branch CSIT.</p>
+
+    <p>The courses @ CSIT incorporate both theory and practicals/labs in the emerging areas of AI, ML, IoT, Blockchain
+        and Data Sciences as core subjects and Quantum Computing, Virtual Reality and Cyber Security as Professional
+        Electives. The above emerging areas have been identified by the national level committee as part of National
+        Perspective Plan for Engineering Education and accepted by AICTE.The courses bring the best of both CSE and IT
+        together. The course @ CSIT will be accepted as being similar / relevant to CSE and IT and will also be accepted
+        for campus recruitments, not only in private companies but also in government undertakings etc.</p>
+
+
+    <h1><a id="about">CSIT AITR</a1>
+    </h1>
+    <section class="main">
+        <p>The Department of Computer Science and Information Technology was established in the year 2019. The
+            department
+            endeavors to produce confident professionals to meet the current trends in the emerging world of Information
+            Technology. Currently the Department has more than 300 students’ strength and a team of highly qualified,
+            dedicated and experienced faculty members to mould the students to meet challenges in the field of computer
+            science and Information Technology.
+            <br><br>
+            Department is having association with <b>Professional Bodies</b> like- CSI, IEEE and ACM.
+            <br><br>
+            We have specially designed Labs for Students so that they can learn the latest technologies such as IoT,
+            ALEXA,
+            MACHINE LEARNING, DEEP LEARNING, SALESFORCE, CYBER-SECURITY, ANDROID, and BIG DATA for increasing student
+            understanding of the complexity and ambiguity of empirical work, develop practical skills, increase the
+            understanding of the concepts, cultivate interest in engineering and science learning, improve teamwork
+            abilities and perform Research Activity.
+        </p>
+        <img src="csit.jpeg">
+    </section>
+
+    <h1> <a id="course">COURSE AND INTAKE</a></h1>
+    <div style="margin: 20px;">
+        <table class="tab" width=100% border="1px">
+            <tr>
+                <th class="tablehead">S.No.</th>
+                <th class="tablehead">DEPARTMENT</th>
+                <th class="tablehead">COURSE TITLE</th>
+                <th class="tablehead">INTAKE CAPACITY</th>
+                <th class="tablehead">DURATION</th>
+                <th class="tablehead">DEGREE OFFERED</th>
+            </tr>
+            <tr class="row">
+                <td>1.</td>
+                <td>Department of Computer Science and Information Technology</td>
+                <td>Computer Science and Information Technology</td>
+                <td>60</td>
+                <td>4 Years</td>
+                <td>B.Tech</td>
+            </tr>
+            <tr class="row">
+                <td>2.</td>
+                <td>Department of Computer Science and Information Technology</td>
+                <td>Computer Science and Technology</td>
+                <td>60</td>
+                <td>4 Years</td>
+                <td>B.Tech</td>
+            </tr>
+            <tr class="row">
+                <td>3.</td>
+                <td>Department of Computer Science and Information Technology</td>
+                <td>Computer Engineering</td>
+                <td>60</td>
+                <td>4 Years</td>
+                <td>B.Tech</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1 class="center">VISION OF THE INSTITUTE</h1>
+    <p class="center">To be an academic leader for the development of human potential so as to meet the global
+        challenges.</p>
+
+    <h1 class="center">MISSION OF THE INSTITUTE</h1><br>
+    <table border=0px width=100%>
+        <tr>
+            <td class="mission-col">To create an intellectually stimulating learning environment</td>
+            <td width=5px></td>
+            <td class="mission-col">To impart value based innovative & research oriented education</td>
+            <td width=5px></td>
+            <td class="mission-col">To develop positive attitude with communication skills</td>
+            <td width=5px></td>
+            <td class="mission-col">To increase entrepreneurship through collaboration with industries
+            </td>
+        </tr>
+    </table>
+    <br>
+    <h1 class="center">DEPARTMENT LABS</h1>
+    <div class="outer">
+        <div class="inner">
+            <strong>Laboratory Facilities for Programming</strong><br><br><br>
+            <img src="https://hackernoon.com/hn-images/1*vVocbe9FT4ar-2JF3k0oRA.png"
+                style="width:200px;height:190px; border-radius: 100px;"><br>
+            Web Technology Lab<br>
+            Problem Solving C Lab<br>
+            Data Structures Lab<br>
+            OOPs C++ lab
+        </div>
+
+        <div class="inner">
+            <strong>Laboratory Facilities for Networking, Operating System & Software Engineering
+            </strong><br><br>
+            <img src="https://34co0u35pfyt37c0y0457xcu-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/USD-Cyber-Cybersecurity-vs-Information-Security-vs-Network-Security-.jpg "
+                style="width:200px;height:200px;border-radius:100px;"><br>
+            Computer Networks Lab<br>
+            Computer Graphics Lab<br>
+            Unix & Shell Programming Lab<br>
+            Network Security lab
+        </div>
+
+        <div class="inner">
+            <strong>Laboratory Facilities for Advanced Courses</strong><br><br><br>
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/assets/domain-specific-page/header-image-ai-568a591c5c693107e1396b9792d55c8891da244a2e7a131cc4208d56c12d7621.png"
+                style="width:200px;"><br>
+            Advanced Java Lab<br>
+            AIML lab<br>
+            Data Science Lab<br>
+            Cloud Computing Lab<br>
+
+        </div>
+    </div>
+
+    <h1>PROGRAM OUTCOMES</h1>
+    <h2 style="padding-left:15px;">Engineering Graduates will be able to:</h2>
+    <ul style="list-style-type:square; padding:30px;">
+        <li>
+            <p><b>Engineering knowledge: </b>Apply the knowledge of mathematics, science, engineering fundamentals, and
+                an engineering specialization to the solution of complex engineering problems.</p>
+        </li>
+        <li>
+            <p><b>Problem analysis: </b>Identify, formulate, review research literature, and analyze complex engineering
+                problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and
+                engineering sciences.</p>
+        </li>
+        <li>
+            <p><b>Design/development of solutions:</b>Design solutions for complex engineering problems and design
+                system components or processes that meet the specified needs with appropriate consideration for the
+                public health and safety, and the cultural, societal, and environmental considerations.</p>
+        </li>
+        <li>
+            <p><b>Conduct investigations of complex problems: </b>Use research-based knowledge and research methods
+                including design of experiments, analysis and interpretation of data, and synthesis of the information
+                to provide valid conclusions.</p>
+        </li>
+        <li>
+            <p><b>Individual and team work: </b>Function effectively as an individual, and as a member or leader in
+                diverse teams, and in multidisciplinary settings.</p>
+        </li>
+        <li>
+            <p><b>Communication: </b>Communicate effectively on complex engineering activities with the engineering
+                community and with society at large</p>
+        </li>
+    </ul>
+
+
+    <h1>PROMISING CAREER OPTIONS</h1>
+    <div style="margin: 20px;">
+        <table class="tab" width=100% border="1px">
+            <tr>
+                <th class="tablehead">Software Engineer</th>
+                <th class="tablehead">Network Security Specialist</th>
+                <th class="tablehead">Network Auditor</th>
+                <th class="tablehead">SAP Net Weaver Programmer</th>
+            </tr>
+            <tr class="row">
+                <td>Software Developer</td>
+                <td>Game Developer</td>
+                <td>Network Security Specialist</td>
+                <td>System Analyst</td>
+            </tr>
+            <tr class="row">
+                <td>Network Control Specialist</td>
+                <td>Data Analyst</td>
+                <td>UX Analyst</td>
+                <td>Data Scientist</td>
+            </tr>
+            <tr class="row">
+                <td>Secure Software Engineer</td>
+                <td colspan="2" class="center">Cyber Risk Analyst & Cyber Security Specialist</td>
+                <td>Computer Forensics Specialist</td>
+            </tr>
+            <tr class="row">
+                <td>Robotics expert</td>
+                <td colspan="2" class="center">System/Network Administrators or IT Managers</td>
+                <td>Research analyst</td>
+            </tr>
+            <tr class="row">
+                <td>Cloud Practitioner</td>
+                <td colspan="2" class="center">AWS Solutions Architect</td>
+                <td>AWS SysOps Associate</td>
+            </tr>
+
+        </table>
+    </div>
+    <section class="background">
+        <div class="subscribe">
+            <img src="https://cdn2.iconfinder.com/data/icons/time-management-9/44/time-20-512.png"
+                style="height: 60px;">
+            <h2>Become a subscriber</h2><br>
+            Subscribe to our page and get the latest updates straight to your inbox<br><br>
+            <form action=reg.html target="_blank">
+                <input required type="email" placeholder="Email Address " id=email
+                    style="height: 12px;width:300px; padding:10px; border-radius:5px ;">
+                <input type="submit" value="SUBSCRIBE" class="colorchange subsbutton">
+            </form>
+            <br><br>
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/AcropolisCollegeIndore/" class="fa fa-facebook  colorchange"
+                target="_blank"></a>
+            <a href="https://www.linkedin.com/school/acropolis-institutions/" class="fa fa-linkedin  colorchange"
+                target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UC60LP9OIuv-HWXIVdolUeRQ" class="fa fa-youtube   colorchange"
+                target="_blank"></a>
+            <a href="https://twitter.com/AcropolisIndia" class="fa fa-twitter colorchange" target="_blank"></a>
+        </div>
+    </section>
+
+
+    <hr>
+    <table id="footer">
+        <tr>
+            <td class="f">ABOUT</td>
+            <td class="f">CELL</td>
+            <td class="f">OUR GROUP'S SITES </td>
+            <td class="f">ACTIVITIES</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="f">Copyright © 2005-2015 Acropolis. Powered & Developed by IT Department</td>
+        </tr>
+    </table>
+
+    <script>
+        function img1() {
+            img.src = "https://www.iare.ac.in/sites/default/files/department_images/csit.jpg ";
+        }
+        function img2() {
+            img.src = "https://images.static-collegedunia.com/public/college_data/images/appImage/16250272251588664341AIPERBuilding.jpg?tr=c-force";
+        }
+    </script>
+</body>
+
+</html>
