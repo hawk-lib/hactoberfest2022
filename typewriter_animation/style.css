@@ -1,0 +1,19 @@
+body{
+    background: #171718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.title{
+    font-size: 48px;
+    color: #b9b9b9;
+}
+
+.typewrite{
+    text-decoration: none;
+}
+.wrap{
+    color: #2f66b3;
+}
