@@ -1,0 +1,34 @@
+
+import java.util.*;
+class String
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Please enter a sentence");
+        String str=sc.nextLine();
+        int l=str.length();
+        String str1=str.toLowerCase();
+        int va=0, ve=0,vi=0, vo=0,vu=0;
+        for(int i=0;i<l;i++)
+        {
+            char ch=str1.charAt(i);
+            if(ch=='a')
+            va++;
+            if(ch=='e')
+            ve++;
+            if(ch=='i')
+            vi++;
+            if(ch=='o')
+            vo++;
+            if(ch=='u')
+            vu++;
+        }
+        System.out.println("Frequency of a="+va);
+        System.out.println("Frequency of e="+ve);
+        System.out.println("Frequency of i="+vi);
+        System.out.println("Frequency of o="+vo);
+        System.out.println("Frequency of u="+vu);
+    }
+}
+        
