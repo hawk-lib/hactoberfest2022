@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(7, 122, 84);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0.5em;
+  text-shadow: 2px 2px 4px #f5fc73;
+}
+
+.image {
+  width: 40%;
+  height: 70%;
+  border: 4px solid black;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+  margin-top: 9em;
+}
