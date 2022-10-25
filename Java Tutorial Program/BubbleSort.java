@@ -6,7 +6,7 @@ worst O(n*2)
 average O(n*2)
 total comparison-  n(n-1)/2
  */
-import java.util.Arrays;
+ import java.util.Arrays;
 
 /*Bubble sort is a sorting algorithm that compares two 
 adjacent elements and swaps them until they are in the intended order.*/
